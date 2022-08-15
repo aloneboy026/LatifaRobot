@@ -1,4 +1,4 @@
-from FallenRobot import telethn as tbot
+from LatifaRobot import telethn as tbot
 import requests
 import time
 
