@@ -1,5 +1,5 @@
-from FallenRobot.modules.helper_funcs.telethn import IMMUNE_USERS, telethn
-from FallenRobot import DRAGONS
+from LatifaRobot.modules.helper_funcs.telethn import IMMUNE_USERS, telethn
+from LatifaRobot import DRAGONS
 from telethon.tl.types import ChannelParticipantsAdmins
 
 
@@ -42,7 +42,7 @@ async def is_user_admin(user_id: int, chat_id):
     return status
 
 
-async def fallen_is_admin(chat_id: int):
+async def Latifa_is_admin(chat_id: int):
     status = False
     fallen = await telethn.get_me()
     async for user in telethn.iter_participants(
