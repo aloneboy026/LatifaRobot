@@ -4,7 +4,7 @@ import os
 
 
 def get_user_list(config, key):
-    with open("{}/FallenRobot/{}".format(os.getcwd(), config), "r") as json_file:
+    with open("{}/LatifaRobot/{}".format(os.getcwd(), config), "r") as json_file:
         return json.load(json_file)[key]
 
 
@@ -18,10 +18,10 @@ class Config(object):
     API_HASH = "awoo"
     TOKEN = "BOT_TOKEN"  # This var used to be API_KEY but it is now TOKEN, adjust accordingly.
     OWNER_ID = 1356469075  # If you dont know, run the bot and do /id in your private chat with it, also an integer
-    OWNER_USERNAME = "anonymous_was_bot"
-    SUPPORT_CHAT = "DevilsHeavenMF"  # Your own group for support, do not add the @
+    OWNER_USERNAME = "XH4REEF_L4DK4_43"
+    SUPPORT_CHAT = "FriendsForever_77"  # Your own group for support, do not add the @
     JOIN_LOGGER = (
-        -1001686672798
+        -1001636750801
     )  # Prints any new group the bot is added to, prints just the name and ID.
     EVENT_LOGS = (
         -1001686672798
