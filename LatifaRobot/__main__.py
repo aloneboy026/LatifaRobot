@@ -4,7 +4,7 @@ import re
 from sys import argv
 from typing import Optional
 
-from FallenRobot import (
+from LatifaRobot import (
     BOT_NAME,
     BOT_USERNAME,
     ALLOW_EXCL,
@@ -29,10 +29,10 @@ from FallenRobot import (
 
 # needed to dynamically load modules
 # NOTE: Module order is not guaranteed, specify that in the config file!
-from FallenRobot.modules import ALL_MODULES
-import FallenRobot.modules.sql.users_sql as sql
-from FallenRobot.modules.helper_funcs.chat_status import is_user_admin
-from FallenRobot.modules.helper_funcs.misc import paginate_modules
+from LatifaRobot.modules import ALL_MODULES
+import LatifaRobot.modules.sql.users_sql as sql
+from LatifaRobot.modules.helper_funcs.chat_status import is_user_admin
+from LatifaRobot.modules.helper_funcs.misc import paginate_modules
 from telegram import InlineKeyboardButton, InlineKeyboardMarkup, ParseMode, Update
 from telegram.error import (
     BadRequest,
