@@ -3,10 +3,10 @@ from pyrogram import filters
 from aiohttp import ClientSession
 from Python_ARQ import ARQ
 
-from FallenRobot import pbot as app
-from FallenRobot.utils.errors import capture_err
-from FallenRobot.utils.permissions import adminsOnly
-from FallenRobot.helper_extra.dbfun import (
+from LatifaRobot import pbot as app
+from LatifaRobot.utils.errors import capture_err
+from LatifaRobot.utils.permissions import adminsOnly
+from LatifaRobot.helper_extra.dbfun import (
     alpha_to_int,
     get_karma,
     get_karmas,
@@ -16,7 +16,7 @@ from FallenRobot.helper_extra.dbfun import (
     karma_on,
     update_karma,
 )
-from FallenRobot import arq
+from LatifaRobot import arq
 
 regex_upvote = (
     r"^((?i)\+|\+\+|\+1|thx|thanx|thanks|thankyou|love|pro|🖤|❣️|💝|💖|💕|❤|💘|cool|good|👍)$"
