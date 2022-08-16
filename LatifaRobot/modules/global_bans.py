@@ -14,9 +14,9 @@ from telegram.ext import (
 )
 from telegram.utils.helpers import mention_html
 
-import FallenRobot.modules.sql.global_bans_sql as sql
-from FallenRobot.modules.sql.users_sql import get_user_com_chats
-from FallenRobot import (
+import LatifaRobot.modules.sql.global_bans_sql as sql
+from LatifaRobot.modules.sql.users_sql import get_user_com_chats
+from LatifaRobot import (
     DEV_USERS,
     EVENT_LOGS,
     OWNER_ID,
@@ -28,16 +28,16 @@ from FallenRobot import (
     WOLVES,
     dispatcher,
 )
-from FallenRobot.modules.helper_funcs.chat_status import (
+from LatifaRobot.modules.helper_funcs.chat_status import (
     is_user_admin,
     support_plus,
     user_admin,
 )
-from FallenRobot.modules.helper_funcs.extraction import (
+from LatifaRobot.modules.helper_funcs.extraction import (
     extract_user,
     extract_user_and_text,
 )
-from FallenRobot.modules.helper_funcs.misc import send_to_list
+from LatifaRobot.modules.helper_funcs.misc import send_to_list
 
 GBAN_ENFORCE_GROUP = 6
 
