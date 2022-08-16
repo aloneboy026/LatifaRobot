@@ -6,9 +6,9 @@ from telegram.error import BadRequest, Unauthorized
 from telegram.ext import CallbackContext, CommandHandler, Filters, run_async
 from telegram.utils.helpers import mention_html
 
-from FallenRobot import DRAGONS, dispatcher
-from FallenRobot.modules.disable import DisableAbleCommandHandler
-from FallenRobot.modules.helper_funcs.chat_status import (
+from LatifaRobot import DRAGONS, dispatcher
+from LatifaRobot.modules.disable import DisableAbleCommandHandler
+from LatifaRobot.modules.helper_funcs.chat_status import (
     bot_admin,
     can_pin,
     can_promote,
@@ -17,17 +17,17 @@ from FallenRobot.modules.helper_funcs.chat_status import (
     ADMIN_CACHE,
 )
 
-from FallenRobot.modules.helper_funcs.admin_rights import (
+from LatifaRobot.modules.helper_funcs.admin_rights import (
     user_can_changeinfo,
     user_can_promote,
 )
-from FallenRobot.modules.helper_funcs.extraction import (
+from LatifaRobot.modules.helper_funcs.extraction import (
     extract_user,
     extract_user_and_text,
 )
-from FallenRobot import SUPPORT_CHAT
-from FallenRobot.modules.log_channel import loggable
-from FallenRobot.modules.helper_funcs.alternate import send_message
+from LatifaRobot import SUPPORT_CHAT
+from LatifaRobot.modules.log_channel import loggable
+from LatifaRobot.modules.helper_funcs.alternate import send_message
 
 
 @run_async
