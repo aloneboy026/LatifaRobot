@@ -3,9 +3,9 @@ import re
 import html
 import random
 import requests
-from FallenRobot import dispatcher
+from LatifaRobot import dispatcher
 from telegram import ParseMode, Update, Bot
-from FallenRobot.modules.disable import DisableAbleCommandHandler
+from LatifaRobot.modules.disable import DisableAbleCommandHandler
 from telegram.ext import CallbackContext, run_async
 
 
