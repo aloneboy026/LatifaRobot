@@ -1,7 +1,7 @@
 import threading
 
 from sqlalchemy import Boolean, Column, UnicodeText
-from FallenRobot.modules.sql import BASE, SESSION
+from LatifaRobot.modules.sql import BASE, SESSION
 
 
 class CleanerBlueTextChatSettings(BASE):
