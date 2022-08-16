@@ -1,6 +1,6 @@
 from bs4 import BeautifulSoup
 import urllib
-from FallenRobot import telethn as tbot
+from LatifaRobot import telethn as tbot
 import glob
 import io
 import os
