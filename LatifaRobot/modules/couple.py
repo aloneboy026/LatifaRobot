@@ -3,8 +3,8 @@ from datetime import datetime
 
 from pyrogram import filters
 
-from FallenRobot import pbot
-from FallenRobot.helper_extra.dbfun import get_couple, save_couple
+from LatifaRobot import pbot
+from LatifaRobot.helper_extra.dbfun import get_couple, save_couple
 
 # Date and time
 def dt():
