@@ -65,11 +65,11 @@ RUN apt update && apt upgrade -y && \
 RUN pip3 install --upgrade pip setuptools
 
 # Copy Python Requirements to /root/FallenRobot
-RUN git clone https://github.com/AnonymousR1025/FallenRobot /root/FallenRobot
-WORKDIR /root/FallenRobot
+RUN git clone https://github.com/TeamLegend77/LatifaRobot /root/LatifaRobot
+WORKDIR /root/LatifaRobot
 
-#Copy config file to /root/FallenRobot/FallenRobot
-COPY ./FallenRobot/sample_config.py ./FallenRobot/config.py* /root/FallenRobot/FallenRobot/
+#Copy config file to /root/LatifaRobot/LatifaRobot
+COPY ./LatifaRobot/sample_config.py ./LatifaRobot/config.py* /root/LatifaRobot/LatifaRobot/
 
 ENV PATH="/home/bot/bin:$PATH"
 
@@ -77,4 +77,4 @@ ENV PATH="/home/bot/bin:$PATH"
 RUN pip3 install -U -r requirements.txt
 
 # Starting Worker
-CMD ["python3","-m","FallenRobot"]
+CMD ["python3","-m","LatifaRobot"]
