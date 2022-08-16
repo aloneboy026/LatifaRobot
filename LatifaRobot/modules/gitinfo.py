@@ -1,8 +1,8 @@
-# © @AnonymousBoy1025
+# © @TeamLegend77
 import aiohttp
 from pyrogram import filters
-from FallenRobot import pbot
-from FallenRobot.pyrogramee.errors import capture_err
+from LatifaRobot import pbot
+from LatifaRobot.pyrogramee.errors import capture_err
 
 
 __mod_name__ = "Gɪᴛʜᴜʙ"
