@@ -5,23 +5,23 @@ from telegram import ParseMode, Message
 from telegram.error import BadRequest
 from telegram.ext import CommandHandler, run_async
 
-import FallenRobot.modules.sql.notes_sql as sql
-from FallenRobot import dispatcher, LOGGER, OWNER_ID, JOIN_LOGGER, SUPPORT_CHAT
-from FallenRobot.__main__ import DATA_IMPORT
-from FallenRobot.modules.helper_funcs.chat_status import user_admin
-from FallenRobot.modules.helper_funcs.alternate import typing_action
+import LatifaRobot.modules.sql.notes_sql as sql
+from LatifaRobot import dispatcher, LOGGER, OWNER_ID, JOIN_LOGGER, SUPPORT_CHAT
+from LatifaRobot.__main__ import DATA_IMPORT
+from LatifaRobot.modules.helper_funcs.chat_status import user_admin
+from LatifaRobot.modules.helper_funcs.alternate import typing_action
 
-# from FallenRobot.modules.rules import get_rules
-import FallenRobot.modules.sql.rules_sql as rulessql
+# from LatifaRobot.modules.rules import get_rules
+import LatifaRobot.modules.sql.rules_sql as rulessql
 
-# from FallenRobot.modules.sql import warns_sql as warnssql
-import FallenRobot.modules.sql.blacklist_sql as blacklistsql
-from FallenRobot.modules.sql import disable_sql as disabledsql
+# from LatifaRobot.modules.sql import warns_sql as warnssql
+import LatifaRobot.modules.sql.blacklist_sql as blacklistsql
+from LatifaRobot.modules.sql import disable_sql as disabledsql
 
-# from FallenRobot.modules.sql import cust_filters_sql as filtersql
-# import FallenRobot.modules.sql.welcome_sql as welcsql
-import FallenRobot.modules.sql.locks_sql as locksql
-from FallenRobot.modules.connection import connected
+# from LatifaRobot.modules.sql import cust_filters_sql as filtersql
+# import LatifaRobot.modules.sql.welcome_sql as welcsql
+import LatifaRobot.modules.sql.locks_sql as locksql
+from LatifaRobot.modules.connection import connected
 
 
 @run_async
@@ -325,7 +325,7 @@ def export_data(update, context):
         },
     }
     baccinfo = json.dumps(backup, indent=4)
-    with open("FallenRobot{}.backup".format(chat_id), "w") as f:
+    with open("LatifaRobot {}.backup".format(chat_id), "w") as f:
         f.write(str(baccinfo))
     context.bot.sendChatAction(current_chat_id, "upload_document")
     tgl = time.strftime("%H:%M:%S - %d/%m/%Y", time.localtime(time.time()))
@@ -341,7 +341,7 @@ def export_data(update, context):
         pass
     context.bot.sendDocument(
         current_chat_id,
-        document=open("FallenRobot{}.backup".format(chat_id), "rb"),
+        document=open("LatifaRobot{}.backup".format(chat_id), "rb"),
         caption="📤*Successfully Exported backup:*\nChat: `{}`\nChat ID: `{}`\nOn: `{}`\n\nNote: This `FallenRobot-Backup` was specially made for notes 📚.".format(
             chat.title, chat_id, tgl
         ),
