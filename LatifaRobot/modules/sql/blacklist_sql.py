@@ -2,7 +2,7 @@ import threading
 
 from sqlalchemy import func, distinct, Column, String, UnicodeText, BigInteger
 
-from FallenRobot.modules.sql import SESSION, BASE
+from LatifaRobot.modules.sql import SESSION, BASE
 
 
 class BlackListFilters(BASE):
