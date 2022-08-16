@@ -3,7 +3,7 @@ import io
 import requests
 from requests import get
 from pyrogram.types import Message
-from FallenRobot import pbot, dispatcher, SUPPORT_CHAT
+from LatifaRobot import pbot, dispatcher, SUPPORT_CHAT
 from bs4 import *
 from pyrogram import filters
 from PIL import Image
