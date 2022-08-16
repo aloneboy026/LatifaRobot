@@ -29,15 +29,15 @@ from FallenRobot import (
     INFOPIC,
     dispatcher,
 )
-from FallenRobot.__main__ import STATS, TOKEN, USER_INFO
-import FallenRobot.modules.sql.userinfo_sql as sql
-from FallenRobot.modules.disable import DisableAbleCommandHandler
-from FallenRobot.modules.sql.global_bans_sql import is_user_gbanned
-from FallenRobot.modules.sql.afk_sql import is_afk, check_afk_status
-from FallenRobot.modules.sql.users_sql import get_user_num_chats
-from FallenRobot.modules.helper_funcs.chat_status import sudo_plus
-from FallenRobot.modules.helper_funcs.extraction import extract_user
-from FallenRobot import telethn as FallenTelethonClient, TIGERS, DRAGONS, DEMONS
+from LatifaRobot.__main__ import STATS, TOKEN, USER_INFO
+import LatifaRobot.modules.sql.userinfo_sql as sql
+from LatifaRobot.modules.disable import DisableAbleCommandHandler
+from LatifaRobot.modules.sql.global_bans_sql import is_user_gbanned
+from LatifaRobot.modules.sql.afk_sql import is_afk, check_afk_status
+from LatifaRobot.modules.sql.users_sql import get_user_num_chats
+from LatifaRobot.modules.helper_funcs.chat_status import sudo_plus
+from LatifaRobot.modules.helper_funcs.extraction import extract_user
+from LatifaRobot import telethn as LatfaTelethonClient, TIGERS, DRAGONS, DEMONS
 
 
 def no_by_per(totalhp, percentage):
@@ -333,10 +333,10 @@ def info(update: Update, context: CallbackContext):
                     [
                         [
                             InlineKeyboardButton(
-                                "ʜᴇᴀʟᴛʜ", url="https://t.me/FallenXBots/7"
+                                "ʜᴇᴀʟᴛʜ", url="https://t.me/LegendXLatifaSupport/7"
                             ),
                             InlineKeyboardButton(
-                                "ᴅɪꜱᴀꜱᴛᴇʀ", url="https://t.me/FallenXBots/8"
+                                "ᴅɪꜱᴀꜱᴛᴇʀ", url="https://t.me/LegendXLatifaSupport/8"
                             ),
                         ],
                     ]
