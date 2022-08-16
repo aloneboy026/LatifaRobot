@@ -1,4 +1,4 @@
-from FallenRobot.modules.sql.night_mode_sql import (
+from LatifaRobot.modules.sql.night_mode_sql import (
     add_nightmode,
     rmnightmode,
     get_all_chat_id,
@@ -8,8 +8,8 @@ from telethon.tl.types import ChatBannedRights
 from apscheduler.schedulers.asyncio import AsyncIOScheduler
 from telethon import functions
 from telethon import types
-from FallenRobot.events import register
-from FallenRobot import telethn as tbot
+from LatifaRobot.events import register
+from LatifaRobot import telethn as tbot
 import os
 
 
