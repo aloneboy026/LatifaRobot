@@ -5,9 +5,9 @@ import time
 from functools import partial
 from contextlib import suppress
 
-import FallenRobot.modules.sql.welcome_sql as sql
-import FallenRobot
-from FallenRobot import (
+import LatifaRobot.modules.sql.welcome_sql as sql
+import LatifaRobot 
+from LatifaRobot import (
     DEV_USERS,
     LOGGER,
     OWNER_ID,
@@ -18,18 +18,18 @@ from FallenRobot import (
     dispatcher,
     JOIN_LOGGER,
 )
-from FallenRobot.modules.helper_funcs.chat_status import (
+from LatifaRobot.modules.helper_funcs.chat_status import (
     is_user_ban_protected,
     user_admin,
 )
-from FallenRobot.modules.helper_funcs.misc import build_keyboard, revert_buttons
-from FallenRobot.modules.helper_funcs.msg_types import get_welcome_type
-from FallenRobot.modules.helper_funcs.string_handling import (
+from LatifaRobot.modules.helper_funcs.misc import build_keyboard, revert_buttons
+from LatifaRobot.modules.helper_funcs.msg_types import get_welcome_type
+from LatifaRobot.modules.helper_funcs.string_handling import (
     escape_invalid_curly_brackets,
     markdown_parser,
 )
-from FallenRobot.modules.log_channel import loggable
-from FallenRobot.modules.sql.global_bans_sql import is_user_gbanned
+from LatifaRobot.modules.log_channel import loggable
+from LatifaRobot.modules.sql.global_bans_sql import is_user_gbanned
 from telegram import (
     ChatPermissions,
     InlineKeyboardButton,
@@ -259,7 +259,7 @@ def new_member(update: Update, context: CallbackContext):
             # Welcome yourself
             elif new_mem.id == bot.id:
                 creator = None
-                if not FallenRobot.ALLOW_CHATS:
+                if not LatifaRobot.ALLOW_CHATS:
                     with suppress(BadRequest):
                         update.effective_message.reply_text(
                             f"Groups are disabled for {bot.first_name}, I'm outta here."
