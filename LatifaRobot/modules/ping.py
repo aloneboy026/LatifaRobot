@@ -5,9 +5,9 @@ import requests
 from telegram import ParseMode, Update
 from telegram.ext import CallbackContext, run_async
 
-from FallenRobot import StartTime, dispatcher
-from FallenRobot.modules.helper_funcs.chat_status import sudo_plus
-from FallenRobot.modules.disable import DisableAbleCommandHandler
+from LatifaRobot import StartTime, dispatcher
+from LatifaRobot.modules.helper_funcs.chat_status import sudo_plus
+from LatifaRobot.modules.disable import DisableAbleCommandHandler
 
 sites_list = {
     "Telegram": "https://api.telegram.org",
@@ -80,7 +80,7 @@ def ping(update: Update, context: CallbackContext):
     uptime = get_readable_time((time.time() - StartTime))
 
     message.edit_text(
-        "ɪ ᴀᴍ ᴀʟɪᴠᴇ ʙᴀʙʏ! 🖤\n"
+        "ɪ ᴀᴍ ᴀʟɪᴠᴇ ʙᴀʙʏ! 🥀\n"
         "<b>ᴛɪᴍᴇ ᴛᴀᴋᴇɴ:</b> <code>{}</code>\n"
         "<b>ᴜᴘᴛɪᴍᴇ:</b> <code>{}</code>".format(telegram_ping, uptime),
         parse_mode=ParseMode.HTML,
