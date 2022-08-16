@@ -3,7 +3,7 @@ import re
 import os
 import html
 import requests
-import FallenRobot.modules.sql.chatbot_sql as sql
+import LatifaRobot.modules.sql.chatbot_sql as sql
 
 from time import sleep
 from telegram import ParseMode
@@ -138,7 +138,7 @@ def chatbot(update: Update, context: CallbackContext):
             return
         anon = message.text
         bot.send_chat_action(chat_id, action="typing")
-        url = f"https://kukiapi.xyz/api/apikey=1356469075-KUKIkq4WMg5FV4/Fallen/Anonymous/message={anon}"
+        url = f"https://kukiapi.xyz/api/apikey=1356469075-KUKIkq4WMg5FV4/Latifa/Anonymous/message={anon}"
         request = requests.get(url)
         results = json.loads(request.text)
         result = f"{results['reply']}"
