@@ -6,7 +6,7 @@ from functools import partial
 from contextlib import suppress
 
 import LatifaRobot.modules.sql.welcome_sql as sql
-import LatifaRobot 
+import LatifaRobot
 from LatifaRobot import (
     DEV_USERS,
     LOGGER,
