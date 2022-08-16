@@ -3,15 +3,15 @@ from PIL import Image
 from datetime import datetime
 
 from telethon import events
-from FallenRobot.events import register
-from FallenRobot import telethn as tbot
+from LatifaRobot.events import register
+from LatifaRobot import telethn as tbot
 from telegraph import Telegraph, upload_file, exceptions
 
 
-Anonymous = "Fallen"
+Romeo = "Latifa"
 TMP_DOWNLOAD_DIRECTORY = "./"
 telegraph = Telegraph()
-r = telegraph.create_account(short_name=Anonymous)
+r = telegraph.create_account(short_name=Romeo)
 auth_url = r["auth_url"]
 
 
