@@ -64,7 +64,7 @@ RUN apt update && apt upgrade -y && \
 # Pypi package Repo upgrade
 RUN pip3 install --upgrade pip setuptools
 
-# Copy Python Requirements to /root/FallenRobot
+# Copy Python Requirements to /root/LatifaRobot
 RUN git clone https://github.com/TeamLegend77/LatifaRobot /root/LatifaRobot
 WORKDIR /root/LatifaRobot
 
