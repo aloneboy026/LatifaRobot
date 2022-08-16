@@ -4,8 +4,8 @@ from traceback import format_exc
 from pyrogram import filters
 from pyrogram.types import Message
 
-from FallenRobot.utils.errors import capture_err
-from FallenRobot import arq, pbot as pgram
+from LatifaRobot.utils.errors import capture_err
+from LatifaRobot import arq, pbot as pgram
 
 Q_CMD = filters.command(["quote", "q"])
 
