@@ -5,8 +5,8 @@ import os
 import heroku3
 import requests
 
-from FallenRobot import telethn as borg, HEROKU_APP_NAME, HEROKU_API_KEY, OWNER_ID
-from FallenRobot.events import register
+from LatifaRobot import telethn as borg, HEROKU_APP_NAME, HEROKU_API_KEY, OWNER_ID
+from LatifaRobot.events import register
 
 heroku_api = "https://api.heroku.com"
 Heroku = heroku3.from_key(HEROKU_API_KEY)
