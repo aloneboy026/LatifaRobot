@@ -2,9 +2,9 @@ import importlib
 from typing import Union
 
 from future.utils import string_types
-from FallenRobot import dispatcher
-from FallenRobot.modules.helper_funcs.handlers import CMD_STARTERS, SpamChecker
-from FallenRobot.modules.helper_funcs.misc import is_module_loaded
+from LatifaRobot import dispatcher
+from LatifaRobot.modules.helper_funcs.handlers import CMD_STARTERS, SpamChecker
+from LatifaRobot.modules.helper_funcs.misc import is_module_loaded
 from telegram import ParseMode, Update
 from telegram.ext import (
     CallbackContext,
@@ -20,7 +20,7 @@ FILENAME = __name__.rsplit(".", 1)[-1]
 # If module is due to be loaded, then setup all the magical handlers
 if is_module_loaded(FILENAME):
 
-    from FallenRobot.modules.helper_funcs.chat_status import (
+    from LatifaRobot.modules.helper_funcs.chat_status import (
         connection_status,
         is_user_admin,
         user_admin,
@@ -160,7 +160,7 @@ if is_module_loaded(FILENAME):
         args = context.args
         chat = update.effective_chat
         if len(args) >= 1:
-            disable_module = "FallenRobot.modules." + args[0].rsplit(".", 1)[0]
+            disable_module = "LatifaRobot.modules." + args[0].rsplit(".", 1)[0]
 
             try:
                 module = importlib.import_module(disable_module)
