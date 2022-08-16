@@ -5,7 +5,7 @@ import sys
 from contextlib import suppress
 from time import sleep
 
-import LatifaRobot 
+import LatifaRobot
 
 from LatifaRobot import dispatcher
 from LatifaRobot.modules.helper_funcs.chat_status import dev_plus
