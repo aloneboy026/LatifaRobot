@@ -2,13 +2,13 @@ import re, ast
 from io import BytesIO
 from typing import Optional
 
-import FallenRobot.modules.sql.notes_sql as sql
-from FallenRobot import LOGGER, JOIN_LOGGER, SUPPORT_CHAT, dispatcher, DRAGONS
-from FallenRobot.modules.disable import DisableAbleCommandHandler
-from FallenRobot.modules.helper_funcs.chat_status import user_admin, connection_status
-from FallenRobot.modules.helper_funcs.misc import build_keyboard, revert_buttons
-from FallenRobot.modules.helper_funcs.msg_types import get_note_type
-from FallenRobot.modules.helper_funcs.string_handling import (
+import LatifaRobot.modules.sql.notes_sql as sql
+from LatifaRobot import LOGGER, JOIN_LOGGER, SUPPORT_CHAT, dispatcher, DRAGONS
+from LatifaRobot.modules.disable import DisableAbleCommandHandler
+from LatifaRobot.modules.helper_funcs.chat_status import user_admin, connection_status
+from LatifaRobot.modules.helper_funcs.misc import build_keyboard, revert_buttons
+from LatifaRobot.modules.helper_funcs.msg_types import get_note_type
+from LatifaRobot.modules.helper_funcs.string_handling import (
     escape_invalid_curly_brackets,
 )
 from telegram import (
