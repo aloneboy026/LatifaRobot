@@ -30,10 +30,10 @@ from telegram.ext import (
 from telegram.error import BadRequest, RetryAfter, Unauthorized
 from telegram.utils.helpers import mention_html, mention_markdown, escape_markdown
 
-from FallenRobot.modules.helper_funcs.filters import CustomFilters
-from FallenRobot.modules.helper_funcs.chat_status import user_admin, user_admin_no_reply
-from FallenRobot import dispatcher, updater, SUPPORT_CHAT
-from FallenRobot.modules.log_channel import gloggable
+from LatifaRobot.modules.helper_funcs.filters import CustomFilters
+from LatifaRobot.modules.helper_funcs.chat_status import user_admin, user_admin_no_reply
+from LatifaRobot import dispatcher, updater, SUPPORT_CHAT
+from LatifaRobot.modules.log_channel import gloggable
 
 
 @run_async
