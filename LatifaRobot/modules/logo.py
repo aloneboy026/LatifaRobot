@@ -11,9 +11,9 @@ from io import BytesIO
 from requests import get
 from telethon.tl.types import InputMessagesFilterPhotos
 
-from FallenRobot import OWNER_ID, SUPPORT_CHAT
-from FallenRobot.events import register
-from FallenRobot import telethn
+from LatifaRobot import OWNER_ID, SUPPORT_CHAT
+from LatifaRobot.events import register
+from LatifaRobot import telethn
 from PIL import Image, ImageDraw, ImageFont
 
 
@@ -268,7 +268,7 @@ async def lego(event):
         pointsize = 500
         fillcolor = "black"
         shadowcolor = "blue"
-        fnt = glob.glob("./FallenRobot/resources/fonts/*")
+        fnt = glob.glob("./LatifaRobot/resources/fonts/*")
         randf = random.choice(fnt)
         font = ImageFont.truetype(randf, 120)
         w, h = draw.textsize(text, font=font)
@@ -288,7 +288,7 @@ async def lego(event):
         fname = "fallen.png"
         img.save(fname, "png")
         await telethn.send_file(
-            event.chat_id, file=fname, caption=f"ʟᴏɢᴏ ɢᴇɴᴇʀᴀᴛᴇᴅ ʙʏ ғᴀʟʟᴇɴ ✘ ʀᴏʙᴏᴛ"
+            event.chat_id, file=fname, caption=f"ʟᴏɢᴏ ɢᴇɴᴇʀᴀᴛᴇᴅ ʙʏ ʟᴀᴛɪꜰᴀ ✘ ʀᴏʙᴏᴛ"
         )
         await pesan.delete()
         if os.path.exists(fname):
