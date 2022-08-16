@@ -1,9 +1,9 @@
 from typing import Optional
 
-import FallenRobot.modules.sql.rules_sql as sql
-from FallenRobot import dispatcher
-from FallenRobot.modules.helper_funcs.chat_status import user_admin, connection_status
-from FallenRobot.modules.helper_funcs.string_handling import markdown_parser
+import LatifaRobot.modules.sql.rules_sql as sql
+from LatifaRobot import dispatcher
+from LatifaRobot.modules.helper_funcs.chat_status import user_admin, connection_status
+from LatifaRobot.modules.helper_funcs.string_handling import markdown_parser
 from telegram import (
     InlineKeyboardButton,
     InlineKeyboardMarkup,
@@ -70,7 +70,7 @@ def send_rules(update, chat_id, from_pm=False, dest_chat=None):
                 [
                     [
                         InlineKeyboardButton(
-                            text="• ʀᴜʟᴇs •",
+                            text="ʀᴜʟᴇs",
                             url=f"t.me/{bot.username}?start={chat_id}",
                         ),
                     ],
@@ -84,7 +84,7 @@ def send_rules(update, chat_id, from_pm=False, dest_chat=None):
                 [
                     [
                         InlineKeyboardButton(
-                            text="• ʀᴜʟᴇs •",
+                            text="ʀᴜʟᴇs",
                             url=f"t.me/{bot.username}?start={chat_id}",
                         ),
                     ],
