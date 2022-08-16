@@ -1,8 +1,8 @@
 import os
-from FallenRobot import telethn as tbot
+from LatifaRobot import telethn as tbot
 from geopy.geocoders import Nominatim
-from FallenRobot.events import register
-from FallenRobot import *
+from LatifaRobot.events import register
+from LatifaRobot import *
 from telethon import *
 from telethon.tl import *
 
