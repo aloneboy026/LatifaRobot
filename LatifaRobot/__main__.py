@@ -813,7 +813,7 @@ def main():
         Fallen_about_callback, pattern=r"fallen_"
     )
     music_callback_handler = CallbackQueryHandler(
-        Music_about_callback, pattern=r"music_"
+        Source_about_callback, pattern=r"source_"
     )
 
     donate_handler = CommandHandler("donate", donate)
