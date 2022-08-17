@@ -374,7 +374,7 @@ def help_button(update, context):
 
 
 @run_async
-def Fallen_about_callback(update: Update, context: CallbackContext):
+def Latifa_about_callback(update: Update, context: CallbackContext):
     query = update.callback_query
     if query.data == "latifa_":
         uptime = get_readable_time((time.time() - StartTime))
@@ -458,7 +458,7 @@ def Fallen_about_callback(update: Update, context: CallbackContext):
 
 
 @run_async
-def Source_about_callback(update: Update, context: CallbackContext):
+def Music_about_callback(update: Update, context: CallbackContext):
     query = update.callback_query
     if query.data == "music_":
         query.message.edit_text(
