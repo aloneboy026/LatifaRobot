@@ -100,7 +100,7 @@ buttons = [
         ),
     ],
     [
-        InlineKeyboardButton(text="❄ ɪɴғᴏ ❄", callback_data="Latifa_"),
+        InlineKeyboardButton(text="❄ ɪɴғᴏ ❄", callback_data="latifa_"),
         InlineKeyboardButton(text="🍁 sᴜᴩᴩᴏʀᴛ 🍁", url=f"https://t.me/{SUPPORT_CHAT}"),
     ],
     [
