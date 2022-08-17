@@ -809,11 +809,11 @@ def main():
     settings_handler = CommandHandler("settings", get_settings)
     settings_callback_handler = CallbackQueryHandler(settings_button, pattern=r"stngs_")
 
-    info_callback_handler = CallbackQueryHandler(
-        Latifa_info_callback, pattern=r"latifa_"
+    latifa_callback_handler = CallbackQueryHandler(
+        Latifa_about_callback, pattern=r"latifa_"
     )
     music_callback_handler = CallbackQueryHandler(
-        Music_info_callback, pattern=r"music_"
+        Music_about_callback, pattern=r"music_"
     )
 
     donate_handler = CommandHandler("donate", donate)
