@@ -165,7 +165,7 @@ def get_id(update: Update, context: CallbackContext):
             )
 
 
-@latifaTelethonClient.on(
+@LatifaTelethonClient.on(
     events.NewMessage(
         pattern="/ginfo ", from_users=(TIGERS or []) + (DRAGONS or []) + (DEMONS or [])
     )
