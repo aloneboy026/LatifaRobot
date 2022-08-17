@@ -203,4 +203,4 @@ from LatifaRobot.modules.helper_funcs.handlers import (
 # make sure the regex handler can take extra kwargs
 tg.RegexHandler = CustomRegexHandler
 tg.CommandHandler = CustomCommandHandler
-tg.MessageHandler = CustomMessageHandleri
+tg.MessageHandler = CustomMessageHandler
