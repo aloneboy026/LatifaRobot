@@ -251,7 +251,7 @@ __help__ = """
 • /zombies*:* `sᴇᴀʀᴄʜᴇs ᴅᴇʟᴇᴛᴇᴅ ᴀᴄᴄᴏᴜɴᴛ `
 • /zombies clean*:* `ʀᴇᴍᴏᴠᴇs ᴅᴇʟᴇᴛᴇᴅ ᴀᴄᴄᴏᴜɴᴛs ғʀᴏᴍ ᴛʜᴇ ɢʀᴏᴜᴘ `
 .
-• /abishnoi <chatid> <ᴍsɢ>*:* `ᴍᴀᴋᴇ ᴍᴇ sᴇɴᴅ ᴀ ᴍᴇssᴀɢᴇ ᴛᴏ ᴀ sᴘᴇᴄɪғɪᴄ ᴄʜᴀᴛ `.
+• /romeo <chatid> <ᴍsɢ>*:* `ᴍᴀᴋᴇ ᴍᴇ sᴇɴᴅ ᴀ ᴍᴇssᴀɢᴇ ᴛᴏ ᴀ sᴘᴇᴄɪғɪᴄ ᴄʜᴀᴛ `.
 """
 
 __mod_name__ = "𝙱ᴀɴs"
@@ -265,9 +265,9 @@ UNBAN_BUTTON_HANDLER = CallbackQueryHandler(unbanb_btn, pattern=r"unbanb_")
 KICKME_HANDLER = DisableAbleCommandHandler(
     ["kickme", "punchme"], punchme, filters=Filters.chat_type.groups, run_async=True
 )
-ABISHNOI_HANDLER = CommandHandler(
-    "abishnoi",
-    abishnoi,
+ROMEO_HANDLER = CommandHandler(
+    "romeo",
+    romeo,
     pass_args=True,
     filters=CustomFilters.sudo_filter,
     run_async=True,
@@ -281,7 +281,7 @@ dispatcher.add_handler(UNBAN_HANDLER)
 # dispatcher.add_handler(ROAR_HANDLER)
 dispatcher.add_handler(KICKME_HANDLER)
 dispatcher.add_handler(UNBAN_BUTTON_HANDLER)
-dispatcher.add_handler(ABISHNOI_HANDLER)
+dispatcher.add_handler(ROMEO_HANDLER)
 dispatcher.add_handler(BANME_HANDLER)
 
 __handlers__ = [
@@ -292,6 +292,6 @@ __handlers__ = [
     # ROAR_HANDLER,
     KICKME_HANDLER,
     UNBAN_BUTTON_HANDLER,
-    ABISHNOI_HANDLER,
+    ROMEO_HANDLER,
     BANME_HANDLER,
 ]
