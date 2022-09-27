@@ -463,17 +463,17 @@ def Music_about_callback(update: Update, context: CallbackContext):
     if query.data == "music_":
         query.message.edit_text(
             text=f"""
-» ᴀssɪsᴛᴀɴᴛ ᴀᴜᴛᴏ ᴊᴏɪɴɪɴɢ ʏᴏᴜʀ ɢʀᴏᴜᴘ ʙᴜᴛ ɢɪᴠᴇ ᴍᴇ /Play ᴄᴏᴍᴍᴀɴᴅ.
+» ᴀssɪsᴛᴀɴᴛ ᴀᴜᴛᴏ ᴊᴏɪɴɪɴɢ ʏᴏᴜʀ ɢʀᴏᴜᴘ ʙᴜᴛ ɢɪᴠᴇ ᴍᴇ /play ᴄᴏᴍᴍᴀɴᴅ.
 
-» /Play <ꜱᴏɴɢ ɴᴀᴍᴇ>
+» /play <ꜱᴏɴɢ ɴᴀᴍᴇ>
 
-» /Pause - ᴘᴀᴜꜱᴇ ᴄᴜʀʀᴇɴᴛ ꜱᴏɴɢ.
+» /pause - ᴘᴀᴜꜱᴇ ᴄᴜʀʀᴇɴᴛ ꜱᴏɴɢ.
  
-» /Resume - ʀᴇꜱᴜᴍᴇ ᴘᴀᴜꜱᴇᴅ ꜱᴏɴɢ.
+» /resume - ʀᴇꜱᴜᴍᴇ ᴘᴀᴜꜱᴇᴅ ꜱᴏɴɢ.
 
-» /Skip - ꜱᴋɪᴘ ᴄᴜʀʀᴇɴᴛ ꜱᴏɴɢ.
+» /skip - ꜱᴋɪᴘ ᴄᴜʀʀᴇɴᴛ ꜱᴏɴɢ.
 
-» /End - ꜱᴛᴏᴘ/ᴇɴᴅ ᴘʟᴀʏᴇʀ.
+» /end - ꜱᴛᴏᴘ/ᴇɴᴅ ᴘʟᴀʏᴇʀ.
 """,
             parse_mode=ParseMode.MARKDOWN,
             disable_web_page_preview=True,
