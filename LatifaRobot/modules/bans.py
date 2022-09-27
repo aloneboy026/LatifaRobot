@@ -103,7 +103,7 @@ def punchme(update: Update, context: CallbackContext):
 @user_admin
 @user_can_ban
 @loggable
-def unban(update: Update, context: CallbackContext) -> Optional[str]:
+def unban(update: Update, context: CallbackContext) -> str:
     message = update.effective_message
     user = update.effective_user
     chat = update.effective_chat
