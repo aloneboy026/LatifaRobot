@@ -23,6 +23,7 @@ from LatifaRobot.modules.helper_funcs.chat_status import (
     is_user_admin,
     is_user_ban_protected,
     is_user_in_chat,
+    dev_plus,
     user_admin,
     user_can_ban,
     can_delete,
