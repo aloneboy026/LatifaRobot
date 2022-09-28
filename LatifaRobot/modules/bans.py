@@ -543,7 +543,7 @@ __help__ = """
 
 __mod_name__ = "𝙱ᴀɴs"
 
-BAN_HANDLER = CommandHandler(["ban", "sban"], ban, run_async=True)
+BAN_HANDLER = CommandHandler(["ban", "sban"], ban, 
 TEMPBAN_HANDLER = CommandHandler(["tban"], temp_ban, run_async=True)
 KICK_HANDLER = CommandHandler(["kick", "punch"], punch, run_async=True)
 UNBAN_HANDLER = CommandHandler("unban", unban, run_async=True)
