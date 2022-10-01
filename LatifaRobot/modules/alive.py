@@ -11,8 +11,8 @@ from LatifaRobot import telethn as tbot, SUPPORT_CHAT, OWNER_USERNAME, dispatche
 
 
 PHOTO = [
-    "https://telegra.ph/file/acda98c869366eefebd11.jpg",
-    "https://telegra.ph/file/aa8f0e675ed19a45c6edb.jpg",
+    "https://telegra.ph/file/ace208e1dc4fa6bdc0802.mp4",
+    "https://telegra.ph/file/ace208e1dc4fa6bdc0802.mp4",
 ]
 
 
