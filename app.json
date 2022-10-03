@@ -10,6 +10,7 @@
          "latifa"
       ],   
    "repository": "https://github.com/TeamLegend77/LatifaRobot",
+   "stack": "heroku-20",
    "addons": [
       {
          "options": {
