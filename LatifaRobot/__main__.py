@@ -244,9 +244,7 @@ def start(update: Update, context: CallbackContext):
             update.effective_message.reply_sticker(
                 "CAACAgUAAx0CYY7V0QABCOJkYvx6ho2RZrfq2H4-mgRPFu7hYTAAAi8BAAI4pUIk2LYJLb1BKroeBA"
             )
-            update.effective_message.reply_text(
-
-
+            PM_START_TEXT.format(escape_markdown(first_name), BOT_NAME),
                 reply_markup=InlineKeyboardMarkup(buttons),
                 parse_mode=ParseMode.MARKDOWN,
                 timeout=60,
