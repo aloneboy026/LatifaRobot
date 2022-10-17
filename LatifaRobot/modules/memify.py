@@ -1,16 +1,10 @@
-from PIL import Image, ImageFont, ImageDraw
-
+import os
 import textwrap
 
-import os
-
-from LatifaRobot.events import register
-
-from LatifaRobot import LOGGER, TEMP_DOWNLOAD_DIRECTORY
-
+from PIL import Image, ImageDraw, ImageFont
 
 from LatifaRobot import telethn as bot
-
+from LatifaRobot.events import register
 
 Credit = "TeamLegend77"
 
@@ -66,8 +60,6 @@ async def drawText(image_path, text):
     img = Image.open(image_path)
 
     os.remove(image_path)
-
-    shadowcolor = "black"
 
     i_width, i_height = img.size
 

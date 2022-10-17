@@ -1,19 +1,12 @@
 from datetime import datetime
 
 from pyrogram import filters
-from pyrogram.types import (
-    InlineKeyboardButton,
-    InlineKeyboardMarkup,
-    CallbackQuery,
-    Message,
-)
+from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup, Message
 
+from LatifaRobot import OWNER_ID as owner_id
+from LatifaRobot import OWNER_USERNAME as owner_usn
+from LatifaRobot import SUPPORT_CHAT as log
 from LatifaRobot import pbot as Client
-from LatifaRobot import (
-    OWNER_ID as owner_id,
-    OWNER_USERNAME as owner_usn,
-    SUPPORT_CHAT as log,
-)
 from LatifaRobot.utils.errors import capture_err
 
 

@@ -1,27 +1,28 @@
-import json, time, os
+import json
+import os
+import time
 from io import BytesIO
 
-from telegram import ParseMode, Message
+from telegram import Message, ParseMode
 from telegram.error import BadRequest
 from telegram.ext import CommandHandler, run_async
 
-import LatifaRobot.modules.sql.notes_sql as sql
-from LatifaRobot import dispatcher, LOGGER, OWNER_ID, JOIN_LOGGER, SUPPORT_CHAT
-from LatifaRobot.__main__ import DATA_IMPORT
-from LatifaRobot.modules.helper_funcs.chat_status import user_admin
-from LatifaRobot.modules.helper_funcs.alternate import typing_action
-
-# from LatifaRobot.modules.rules import get_rules
-import LatifaRobot.modules.sql.rules_sql as rulessql
-
 # from LatifaRobot.modules.sql import warns_sql as warnssql
 import LatifaRobot.modules.sql.blacklist_sql as blacklistsql
-from LatifaRobot.modules.sql import disable_sql as disabledsql
 
 # from LatifaRobot.modules.sql import cust_filters_sql as filtersql
 # import LatifaRobot.modules.sql.welcome_sql as welcsql
 import LatifaRobot.modules.sql.locks_sql as locksql
+import LatifaRobot.modules.sql.notes_sql as sql
+
+# from LatifaRobot.modules.rules import get_rules
+import LatifaRobot.modules.sql.rules_sql as rulessql
+from LatifaRobot import JOIN_LOGGER, LOGGER, OWNER_ID, SUPPORT_CHAT, dispatcher
+from LatifaRobot.__main__ import DATA_IMPORT
 from LatifaRobot.modules.connection import connected
+from LatifaRobot.modules.helper_funcs.alternate import typing_action
+from LatifaRobot.modules.helper_funcs.chat_status import user_admin
+from LatifaRobot.modules.sql import disable_sql as disabledsql
 
 
 @run_async

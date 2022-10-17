@@ -1,7 +1,8 @@
 import threading
 
-from LatifaRobot.modules.sql import BASE, SESSION
 from sqlalchemy import Column, String, UnicodeText, distinct, func
+
+from LatifaRobot.modules.sql import BASE, SESSION
 
 
 class Disable(BASE):

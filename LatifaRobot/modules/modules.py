@@ -1,5 +1,8 @@
-import importlib
 import collections
+import importlib
+
+from telegram import ParseMode, Update
+from telegram.ext import CallbackContext, CommandHandler, run_async
 
 from LatifaRobot import dispatcher, telethn
 from LatifaRobot.__main__ import (
@@ -14,8 +17,6 @@ from LatifaRobot.__main__ import (
     USER_SETTINGS,
 )
 from LatifaRobot.modules.helper_funcs.chat_status import dev_plus, sudo_plus
-from telegram import ParseMode, Update
-from telegram.ext import CallbackContext, CommandHandler, run_async
 
 
 @run_async

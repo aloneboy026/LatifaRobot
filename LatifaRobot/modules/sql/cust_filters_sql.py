@@ -1,6 +1,6 @@
 import threading
 
-from sqlalchemy import Column, String, UnicodeText, Boolean, BigInteger, distinct, func
+from sqlalchemy import BigInteger, Boolean, Column, String, UnicodeText, distinct, func
 
 from LatifaRobot.modules.helper_funcs.msg_types import Types
 from LatifaRobot.modules.sql import BASE, SESSION

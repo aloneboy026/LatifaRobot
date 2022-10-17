@@ -1,6 +1,7 @@
 import threading
 
 from sqlalchemy import Boolean, Column, UnicodeText
+
 from LatifaRobot.modules.sql import BASE, SESSION
 
 

@@ -1,9 +1,10 @@
 import random
 
-from LatifaRobot import dispatcher
-from LatifaRobot.modules.disable import DisableAbleCommandHandler
 from telegram import Update
 from telegram.ext import CallbackContext, run_async
+
+from LatifaRobot import dispatcher
+from LatifaRobot.modules.disable import DisableAbleCommandHandler
 
 reactions = [
     "( ͡° ͜ʖ ͡°)",

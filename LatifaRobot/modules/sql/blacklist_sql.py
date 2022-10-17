@@ -1,8 +1,8 @@
 import threading
 
-from sqlalchemy import func, distinct, Column, String, UnicodeText, BigInteger
+from sqlalchemy import BigInteger, Column, String, UnicodeText, distinct, func
 
-from LatifaRobot.modules.sql import SESSION, BASE
+from LatifaRobot.modules.sql import BASE, SESSION
 
 
 class BlackListFilters(BASE):

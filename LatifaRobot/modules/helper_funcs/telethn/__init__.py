@@ -1,4 +1,4 @@
-from LatifaRobot import DEV_USERS, DRAGONS, DEMONS, TIGERS, WOLVES, telethn
+from LatifaRobot import DEMONS, DEV_USERS, DRAGONS, TIGERS, WOLVES, telethn
 
 IMMUNE_USERS = DRAGONS + WOLVES + DEMONS + TIGERS + DEV_USERS
 

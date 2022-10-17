@@ -1,12 +1,11 @@
 import os
-from PIL import Image
 from datetime import datetime
 
-from telethon import events
-from LatifaRobot.events import register
-from LatifaRobot import telethn as tbot
-from telegraph import Telegraph, upload_file, exceptions
+from PIL import Image
+from telegraph import Telegraph, exceptions, upload_file
 
+from LatifaRobot import telethn as tbot
+from LatifaRobot.events import register
 
 Romeo = "Latifa"
 TMP_DOWNLOAD_DIRECTORY = "./"
@@ -43,7 +42,7 @@ async def _(event):
                 os.remove(downloaded_file_name)
             else:
                 end = datetime.now()
-                ms_two = (end - start).seconds
+                (end - start).seconds
                 os.remove(downloaded_file_name)
                 await h.edit(
                     "Uploaded to https://telegra.ph{})".format(media_urls[0]),

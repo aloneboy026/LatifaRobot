@@ -1,11 +1,8 @@
 import asyncio
+
 from pyrogram import filters
-from aiohttp import ClientSession
-from Python_ARQ import ARQ
 
 from LatifaRobot import pbot as app
-from LatifaRobot.utils.errors import capture_err
-from LatifaRobot.utils.permissions import adminsOnly
 from LatifaRobot.helper_extra.dbfun import (
     alpha_to_int,
     get_karma,
@@ -16,7 +13,8 @@ from LatifaRobot.helper_extra.dbfun import (
     karma_on,
     update_karma,
 )
-from LatifaRobot import arq
+from LatifaRobot.utils.errors import capture_err
+from LatifaRobot.utils.permissions import adminsOnly
 
 regex_upvote = (
     r"^((?i)\+|\+\+|\+1|thx|thanx|thanks|thankyou|love|pro|🖤|❣️|💝|💖|💕|❤|💘|cool|good|👍)$"

@@ -14,7 +14,6 @@ from LatifaRobot import DRAGONS as SUDO_USERS
 from LatifaRobot import pbot
 from LatifaRobot.modules.sql import forceSubscribe_sql as sql
 
-
 logging.basicConfig(level=logging.INFO)
 
 static_data_filter = filters.create(

@@ -1,10 +1,10 @@
-import os
-from LatifaRobot import telethn as tbot
 from geopy.geocoders import Nominatim
-from LatifaRobot.events import register
-from LatifaRobot import *
 from telethon import *
 from telethon.tl import *
+
+from LatifaRobot import *
+from LatifaRobot import telethn as tbot
+from LatifaRobot.events import register
 
 GMAPS_LOC = "https://maps.googleapis.com/maps/api/geocode/json"
 

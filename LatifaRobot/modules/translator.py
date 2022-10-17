@@ -1,6 +1,7 @@
-from telegram import Update, ParseMode
-from telegram.ext import CallbackContext
 from gpytranslate import SyncTranslator
+from telegram import ParseMode, Update
+from telegram.ext import CallbackContext
+
 from LatifaRobot import dispatcher
 from LatifaRobot.modules.disable import DisableAbleCommandHandler
 

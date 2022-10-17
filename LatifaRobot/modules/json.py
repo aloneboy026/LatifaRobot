@@ -1,10 +1,10 @@
 import io
-from LatifaRobot.events import register
-from LatifaRobot import telethn as tbot
+
 from telethon import types
-from telethon import events
 from telethon.tl import functions
-from telethon.tl.types import *
+
+from LatifaRobot import telethn as tbot
+from LatifaRobot.events import register
 
 
 async def is_register_admin(chat, user):

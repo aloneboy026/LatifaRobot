@@ -1,16 +1,17 @@
 import threading
 
-from LatifaRobot import dispatcher
-from LatifaRobot.modules.sql import BASE, SESSION
 from sqlalchemy import (
+    BigInteger,
     Column,
     ForeignKey,
-    BigInteger,
     String,
     UnicodeText,
     UniqueConstraint,
     func,
 )
+
+from LatifaRobot import dispatcher
+from LatifaRobot.modules.sql import BASE, SESSION
 
 
 class Users(BASE):
