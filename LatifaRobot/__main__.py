@@ -96,7 +96,7 @@ buttons = [
         ),
     ],
     [
-        InlineKeyboardButton(text="❄ ɪɴғᴏ ❄", callback_data="info_"),
+        InlineKeyboardButton(text="❄ ɪɴғᴏ ❄", callback_data="latifa_"),
         InlineKeyboardButton(text="🍁 sᴜᴩᴩᴏʀᴛ 🍁", url=f"https://t.me/{SUPPORT_CHAT}"),
     ],
     [
