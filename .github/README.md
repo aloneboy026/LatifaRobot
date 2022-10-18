@@ -1,14 +1,14 @@
 ━━━━━━━━━━━━━━━━━━━━
 
 <h2 align="center">
-    ─ ─˹ＬＡＴＩＦＡ˼ ──
+    ─ ─˹Latifa˼ ──
 </h2>
 
 <p align="center">
   <img src="https://github.com/TeamLegend77/LatifaRobot/blob/master/Latifa/resources/fglitch.gif">
 </p>
 
-_**ᴀᴠᴀɪʟᴀʙʟᴇ ᴏɴ ᴛᴇʟᴇɢʀᴀᴍ ᴀs [ＬＡＴＩＦＡ](https://t.me/LatifaXRobot)**_
+_**ᴀᴠᴀɪʟᴀʙʟᴇ ᴏɴ ᴛᴇʟᴇɢʀᴀᴍ ᴀs [Latifa](https://t.me/LatifaXRobot)**_
 ━━━━━━━━━━━━━━━━━━━━
 
 <p align="center">
@@ -25,7 +25,7 @@ _**ᴀᴠᴀɪʟᴀʙʟᴇ ᴏɴ ᴛᴇʟᴇɢʀᴀᴍ ᴀs [ＬＡＴＩＦＡ]
 ━━━━━━━━━━━━━━━━━━━━
 
 <p align="center">
-  <img src="https://telegra.ph/file/7bd111132fce009e4605e.jpg">
+  <img src="https://te.legra.ph/file/c6c2e382026b99c50fed1.jpg">
 </p>
 
 <p align="center">
@@ -45,10 +45,10 @@ _**ᴀᴠᴀɪʟᴀʙʟᴇ ᴏɴ ᴛᴇʟᴇɢʀᴀᴍ ᴀs [ＬＡＴＩＦＡ]
 </h3>
 
 <p align="center">
-<a href="https://telegram.me/LegendSupport"><img src="https://img.shields.io/badge/-Support%20Group-blue.svg?style=for-the-badge&logo=Telegram"></a>
+<a href="https://telegram.me/YaaroKiMehfil_YKM"><img src="https://img.shields.io/badge/-Support%20Group-blue.svg?style=for-the-badge&logo=Telegram"></a>
 </p>
 <p align="center">
-<a href="https://telegram.me/XH4REEF_L4DK4_43"><img src="https://img.shields.io/badge/%20ＲＯＭＥＯ-blue.svg?style=for-the-badge&logo=Telegram"></a>
+<a href="https://telegram.me/B4DM44XXH_ROMEO"><img src="https://img.shields.io/badge/%20ＲＯＭＥＯ-blue.svg?style=for-the-badge&logo=Telegram"></a>
 </p>
 
 ━━━━━━━━━━━━━━━━━━━━
