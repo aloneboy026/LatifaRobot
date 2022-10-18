@@ -96,7 +96,7 @@ buttons = [
         ),
     ],
     [
-        InlineKeyboardButton(text="❄ ɪɴғᴏ ❄", callback_data="latifa_"),
+        InlineKeyboardButton(text="❄ ɪɴғᴏ ❄", callback_data="info_"),
         InlineKeyboardButton(text="🍁 sᴜᴩᴩᴏʀᴛ 🍁", url=f"https://t.me/{SUPPORT_CHAT}"),
     ],
     [
@@ -792,7 +792,7 @@ def main():
     settings_callback_handler = CallbackQueryHandler(settings_button, pattern=r"stngs_")
 
     about_callback_handler = CallbackQueryHandler(
-        Latifa_about_callback, pattern=r"latifa_"
+        info_about_callback, pattern=r"info_"
     )
     music_callback_handler = CallbackQueryHandler(
         Music_about_callback, pattern=r"music_"
@@ -803,7 +803,7 @@ def main():
 
     dispatcher.add_handler(start_handler)
     dispatcher.add_handler(help_handler)
-    dispatcher.add_handler(latifa_callback_handler)
+    dispatcher.add_handler(info_callback_handler)
     dispatcher.add_handler(music_callback_handler)
     dispatcher.add_handler(settings_handler)
     dispatcher.add_handler(help_callback_handler)
