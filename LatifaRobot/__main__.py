@@ -91,21 +91,38 @@ PM_START_TEXT = """
 buttons = [
     [
         InlineKeyboardButton(
-            text="ᴀᴅᴅ ᴍᴇ ᴇʟsᴇ ʏᴏᴜ ɢᴇʏ",
+            text="➕ ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ ➕",
             url=f"https://t.me/{BOT_USERNAME}?startgroup=true",
         ),
+
     ],
+
     [
-        InlineKeyboardButton(text="ʜᴇʟᴩ & ᴄᴏᴍᴍᴀɴᴅs", callback_data="help_back"),
+
+        InlineKeyboardButton(text="❄ ɪɴғᴏ ❄", callback_data="latifa_"),
+
+        InlineKeyboardButton(text="🍁 sᴜᴩᴩᴏʀᴛ 🍁", url=f"https://t.me/{SUPPORT_CHAT}"),
+
     ],
+
     [
-        InlineKeyboardButton(text="❄ ᴀʙᴏᴜᴛ ❄", callback_data="fallen_"),
-        InlineKeyboardButton(text="✨ sᴜᴩᴩᴏʀᴛ ✨", url=f"https://t.me/{SUPPORT_CHAT}"),
+
+        InlineKeyboardButton(text="🖤 ᴅᴇᴠᴇʟᴏᴩᴇʀ 🖤", url=f"tg://user?id={OWNER_ID}"),
+
+        InlineKeyboardButton(text="🎵 ᴍᴜꜱɪᴄ 🎵", callback_data="music_"),
+
     ],
+
     [
-        InlineKeyboardButton(text="🥀 ᴅᴇᴠᴇʟᴏᴩᴇʀ 🥀", url=f"tg://user?id={OWNER_ID}"),
-        InlineKeyboardButton(text="☁️ sᴏᴜʀᴄᴇ ☁️", callback_data="source_"),
+
+        
+
+        InlineKeyboardButton(text="🔰 ᴀʟʟ ᴄᴏᴍᴍᴀɴᴅs 🔰", callback_data="help_back"),
+
     ],
+
+    [],
+
 ]
 
 HELP_STRINGS = f"""
@@ -118,7 +135,7 @@ HELP_STRINGS = f"""
 
 DONATE_STRING = """ʜᴇʏ ʙᴀʙʏ,
   ʜᴀᴩᴩʏ ᴛᴏ ʜᴇᴀʀ ᴛʜᴀᴛ ʏᴏᴜ ᴡᴀɴɴᴀ ᴅᴏɴᴀᴛᴇ.
-ʏᴏᴜ ᴄᴀɴ ᴅɪʀᴇᴄᴛʟʏ ᴄᴏɴᴛᴀᴄᴛ ᴍʏ [ᴅᴇᴠᴇʟᴏᴩᴇʀ](https://t.me/anonymous_was_bot) ғᴏʀ ᴅᴏɴᴀᴛɪɴɢ ᴏʀ ʏᴏᴜ ᴄᴀɴ ᴠɪsɪᴛ ᴍʏ [sᴜᴩᴩᴏʀᴛ ᴄʜᴀᴛ](https://t.me/DevilsHeavenMF) ᴀɴᴅ ᴀsᴋ ᴛʜᴇʀᴇ ᴀʙᴏᴜᴛ ᴅᴏɴᴀᴛɪᴏɴ."""
+ʏᴏᴜ ᴄᴀɴ ᴅɪʀᴇᴄᴛʟʏ ᴄᴏɴᴛᴀᴄᴛ ᴍʏ [ᴅᴇᴠᴇʟᴏᴩᴇʀ](https://t.me/B4DM44XXH_ROMEO) ғᴏʀ ᴅᴏɴᴀᴛɪɴɢ ᴏʀ ʏᴏᴜ ᴄᴀɴ ᴠɪsɪᴛ ᴍʏ [sᴜᴩᴩᴏʀᴛ ᴄʜᴀᴛ](https://t.me/YaaroKiMehfil_YKM) ᴀɴᴅ ᴀsᴋ ᴛʜᴇʀᴇ ᴀʙᴏᴜᴛ ᴅᴏɴᴀᴛɪᴏɴ."""
 
 IMPORTED = {}
 MIGRATEABLE = []
@@ -356,7 +373,7 @@ def help_button(update, context):
 @run_async
 def Fallen_about_callback(update: Update, context: CallbackContext):
     query = update.callback_query
-    if query.data == "fallen_":
+    if query.data == "latifa_":
         uptime = get_readable_time((time.time() - StartTime))
         query.message.edit_text(
             text=f"*ʜᴇʏ,*🥀\n  *ᴛʜɪs ɪs {BOT_NAME}*"
@@ -379,28 +396,28 @@ def Fallen_about_callback(update: Update, context: CallbackContext):
                 [
                     [
                         InlineKeyboardButton(
-                            text="sᴜᴩᴩᴏʀᴛ", callback_data="fallen_support"
+                            text="• sᴜᴩᴩᴏʀᴛ •", callback_data="latifa_support"
                         ),
                         InlineKeyboardButton(
-                            text="ᴄᴏᴍᴍᴀɴᴅs", callback_data="help_back"
+                            text="• ᴄᴏᴍᴍᴀɴᴅs •", callback_data="help_back"
                         ),
                     ],
                     [
                         InlineKeyboardButton(
-                            text="ᴅᴇᴠᴇʟᴏᴩᴇʀ", url=f"tg://user?id={OWNER_ID}"
+                            text="• ᴅᴇᴠᴇʟᴏᴩᴇʀ •", url=f"tg://user?id={OWNER_ID}"
                         ),
                         InlineKeyboardButton(
-                            text="sᴏᴜʀᴄᴇ",
+                            text="• sᴏᴜʀᴄᴇ •",
                             callback_data="source_",
                         ),
                     ],
                     [
-                        InlineKeyboardButton(text="◁", callback_data="fallen_back"),
+                        InlineKeyboardButton(text="◁", callback_data="latifa_back"),
                     ],
                 ]
             ),
         )
-    elif query.data == "fallen_support":
+    elif query.data == "latifa_support":
         query.message.edit_text(
             text="*๏ ᴄʟɪᴄᴋ ᴏɴ ᴛʜᴇ ʙᴜᴛᴛᴏɴs ɢɪᴠᴇɴ ʙᴇʟᴏᴡ ᴛᴏ ɢᴇᴛ ʜᴇʟᴩ ᴀɴᴅ ᴍᴏʀᴇ ɪɴғᴏʀᴍᴀᴛɪᴏɴ ᴀʙᴏᴜᴛ ᴍᴇ.*"
             f"\n\nɪғ ʏᴏᴜ ғᴏᴜɴᴅ ᴀɴʏ ʙᴜɢ ɪɴ {BOT_NAME} ᴏʀ ɪғ ʏᴏᴜ ᴡᴀɴɴᴀ ɢɪᴠᴇ ғᴇᴇᴅʙᴀᴄᴋ ᴀʙᴏᴜᴛ ᴛʜᴇ {BOT_NAME}, ᴩʟᴇᴀsᴇ ʀᴇᴩᴏʀᴛ ɪᴛ ᴀᴛ sᴜᴩᴩᴏʀᴛ ᴄʜᴀᴛ.",
@@ -409,28 +426,28 @@ def Fallen_about_callback(update: Update, context: CallbackContext):
                 [
                     [
                         InlineKeyboardButton(
-                            text="sᴜᴩᴩᴏʀᴛ", url=f"https://t.me/{SUPPORT_CHAT}"
+                            text="• sᴜᴩᴩᴏʀᴛ •", url=f"https://t.me/{SUPPORT_CHAT}"
                         ),
                         InlineKeyboardButton(
-                            text="ᴜᴩᴅᴀᴛᴇs", url=f"https://t.me/{SUPPORT_CHAT}"
+                            text="• ᴜᴩᴅᴀᴛᴇs •", url=f"https://t.me/{SUPPORT_CHAT}"
                         ),
                     ],
                     [
                         InlineKeyboardButton(
-                            text="ᴅᴇᴠᴇʟᴏᴩᴇʀ", url=f"tg://user?id={OWNER_ID}"
+                            text="• ᴅᴇᴠᴇʟᴏᴩᴇʀ •", url=f"tg://user?id={OWNER_ID}"
                         ),
                         InlineKeyboardButton(
-                            text="ɢɪᴛʜᴜʙ",
-                            callback_data="https://github.com/AnonymousR1025",
+                            text="• ɢɪᴛʜᴜʙ •",
+                            callback_data="https://github.com/TeamLegend77",
                         ),
                     ],
                     [
-                        InlineKeyboardButton(text="◁", callback_data="fallen_"),
+                        InlineKeyboardButton(text="◁", callback_data="latifa_"),
                     ],
                 ]
             ),
         )
-    elif query.data == "fallen_back":
+    elif query.data == "latifa_back":
         first_name = update.effective_user.first_name
         query.message.edit_text(
             PM_START_TEXT.format(escape_markdown(first_name), BOT_NAME),
@@ -444,19 +461,22 @@ def Fallen_about_callback(update: Update, context: CallbackContext):
 @run_async
 def Source_about_callback(update: Update, context: CallbackContext):
     query = update.callback_query
-    if query.data == "source_":
+    if query.data == "music_":
         query.message.edit_text(
             text=f"""
-*ʜᴇʏ,
- ᴛʜɪs ɪs {BOT_NAME},
-ᴀɴ ᴏᴩᴇɴ sᴏᴜʀᴄᴇ ᴛᴇʟᴇɢʀᴀᴍ ɢʀᴏᴜᴩ ᴍᴀɴᴀɢᴇᴍᴇɴᴛ ʙᴏᴛ.*
-ᴡʀɪᴛᴛᴇɴ ɪɴ ᴩʏᴛʜᴏɴ ᴡɪᴛʜ ᴛʜᴇ ʜᴇʟᴩ ᴏғ : [ᴛᴇʟᴇᴛʜᴏɴ](https://github.com/LonamiWebs/Telethon)
-[ᴩʏʀᴏɢʀᴀᴍ](https://github.com/pyrogram/pyrogram)
-[ᴩʏᴛʜᴏɴ-ᴛᴇʟᴇɢʀᴀᴍ-ʙᴏᴛ](https://github.com/python-telegram-bot/python-telegram-bot)
-ᴀɴᴅ ᴜsɪɴɢ [sǫʟᴀʟᴄʜᴇᴍʏ](https://www.sqlalchemy.org) ᴀɴᴅ [ᴍᴏɴɢᴏ](https://cloud.mongodb.com) ᴀs ᴅᴀᴛᴀʙᴀsᴇ.
-*ʜᴇʀᴇ ɪs ᴍʏ sᴏᴜʀᴄᴇ ᴄᴏᴅᴇ :* [ɢɪᴛʜᴜʙ](https://github.com/AnonymousR1025/FallenRobot)
-{BOT_NAME} ɪs ʟɪᴄᴇɴsᴇᴅ ᴜɴᴅᴇʀ ᴛʜᴇ [ᴍɪᴛ ʟɪᴄᴇɴsᴇ](https://github.com/AnonymousR1025/FallenRobot/blob/master/LICENSE).
-© 2022 - 2023 [@ᴅᴇᴠɪʟsʜᴇᴀᴠᴇɴᴍғ](https://t.me/{SUPPORT_CHAT}), ᴀʟʟ ʀɪɢʜᴛs ʀᴇsᴇʀᴠᴇᴅ.
+➻ ᴀssɪsᴛᴀɴᴛ ᴀᴜᴛᴏ ᴊᴏɪɴɪɴɢ ʏᴏᴜʀ ɢʀᴏᴜᴘ ʙᴜᴛ ɢɪᴠᴇ ᴍᴇ /play ᴄᴏᴍᴍᴀɴᴅ.
+
+➻ /play <ꜱᴏɴɢ ɴᴀᴍᴇ>
+
+➻ /pause - ᴘᴀᴜꜱᴇ ᴄᴜʀʀᴇɴᴛ ꜱᴏɴɢ !
+
+
+
+➻ /resume - ʀᴇꜱᴜᴍᴇ ᴘᴀᴜꜱᴇᴅ ꜱᴏɴɢ !
+
+➻ /skip - ꜱᴋɪᴘ ᴄᴜʀʀᴇɴᴛ ꜱᴏɴɢ !
+
+➻ /end - ꜱᴛᴏᴘ/ᴇɴᴅ ᴘʟᴀʏᴇʀ !
 """,
             parse_mode=ParseMode.MARKDOWN,
             disable_web_page_preview=True,
@@ -464,7 +484,7 @@ def Source_about_callback(update: Update, context: CallbackContext):
                 [[InlineKeyboardButton(text="◁", callback_data="source_back")]]
             ),
         )
-    elif query.data == "source_back":
+    elif query.data == "music_back":
         first_name = update.effective_user.first_name
         query.message.edit_text(
             PM_START_TEXT.format(escape_markdown(first_name), BOT_NAME),
@@ -712,7 +732,7 @@ def donate(update: Update, context: CallbackContext):
 
         if OWNER_ID != 5048100752 and DONATION_LINK:
             update.effective_message.reply_text(
-                f"» ᴛʜᴇ ᴅᴇᴠᴇʟᴏᴩᴇʀ ᴏғ {BOT_NAME} sᴏʀᴄᴇ ᴄᴏᴅᴇ ɪs [ᴀɴᴏɴʏᴍᴏᴜs](https://t.me/anonymous_was_bot)."
+                f"» ᴛʜᴇ ᴅᴇᴠᴇʟᴏᴩᴇʀ ᴏғ {BOT_NAME} sᴏʀᴄᴇ ᴄᴏᴅᴇ ɪs [`ʀᴏᴍᴇᴏ](https://t.me/B4DM44XXH_ROMEO)."
                 f"\n\nʙᴜᴛ ʏᴏᴜ ᴄᴀɴ ᴀʟsᴏ ᴅᴏɴᴀᴛᴇ ᴛᴏ ᴛʜᴇ ᴩᴇʀsᴏɴ ᴄᴜʀʀᴇɴᴛʟʏ ʀᴜɴɴɪɴɢ ᴍᴇ : [ʜᴇʀᴇ]({DONATION_LINK})",
                 parse_mode=ParseMode.MARKDOWN,
                 disable_web_page_preview=True,
@@ -763,7 +783,7 @@ def main():
                 f"@{SUPPORT_CHAT}",
                 photo=START_IMG,
                 caption=f"""
-ㅤ🥀 {BOT_NAME} ɪs ᴀʟɪᴠᴇ ʙᴀʙʏ...
+ㅤ🥀 {BOT_NAME} ɪs ᴀʟɪᴠᴇ ʙᴀʙʏ...!
 ┏•❅────✧❅✦❅✧────❅•┓
 ㅤ★ **ᴘʏᴛʜᴏɴ :** `{y()}`
 ㅤ★ **ʟɪʙʀᴀʀʏ :** `{telever}`
@@ -788,10 +808,10 @@ def main():
     settings_callback_handler = CallbackQueryHandler(settings_button, pattern=r"stngs_")
 
     about_callback_handler = CallbackQueryHandler(
-        Fallen_about_callback, pattern=r"fallen_"
+        Latifa_about_callback, pattern=r"latifa_"
     )
     source_callback_handler = CallbackQueryHandler(
-        Source_about_callback, pattern=r"source_"
+        Music_about_callback, pattern=r"music_"
     )
 
     donate_handler = CommandHandler("donate", donate)
@@ -799,8 +819,8 @@ def main():
 
     dispatcher.add_handler(start_handler)
     dispatcher.add_handler(help_handler)
-    dispatcher.add_handler(about_callback_handler)
-    dispatcher.add_handler(source_callback_handler)
+    dispatcher.add_handler(latifa_callback_handler)
+    dispatcher.add_handler(music_callback_handler)
     dispatcher.add_handler(settings_handler)
     dispatcher.add_handler(help_callback_handler)
     dispatcher.add_handler(settings_callback_handler)
