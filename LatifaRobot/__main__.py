@@ -791,7 +791,7 @@ def main():
     settings_handler = CommandHandler("settings", get_settings)
     settings_callback_handler = CallbackQueryHandler(settings_button, pattern=r"stngs_")
 
-    latifa_callback_handler = CallbackQueryHandler(
+    about_callback_handler = CallbackQueryHandler(
         Latifa_about_callback, pattern=r"latifa_"
     )
     music_callback_handler = CallbackQueryHandler(
