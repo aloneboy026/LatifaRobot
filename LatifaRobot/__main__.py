@@ -94,35 +94,19 @@ buttons = [
             text="➕ ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ ➕",
             url=f"https://t.me/{BOT_USERNAME}?startgroup=true",
         ),
-
     ],
-
     [
-
         InlineKeyboardButton(text="❄ ɪɴғᴏ ❄", callback_data="latifa_"),
-
         InlineKeyboardButton(text="🍁 sᴜᴩᴩᴏʀᴛ 🍁", url=f"https://t.me/{SUPPORT_CHAT}"),
-
     ],
-
     [
-
         InlineKeyboardButton(text="🖤 ᴅᴇᴠᴇʟᴏᴩᴇʀ 🖤", url=f"tg://user?id={OWNER_ID}"),
-
         InlineKeyboardButton(text="🎵 ᴍᴜꜱɪᴄ 🎵", callback_data="music_"),
-
     ],
-
     [
-
-        
-
         InlineKeyboardButton(text="🔰 ᴀʟʟ ᴄᴏᴍᴍᴀɴᴅs 🔰", callback_data="help_back"),
-
     ],
-
     [],
-
 ]
 
 HELP_STRINGS = f"""
